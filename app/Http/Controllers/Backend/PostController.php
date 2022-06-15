@@ -42,11 +42,10 @@ class PostController extends Controller
         $post -> description = $request -> description;
 
         if($request->hasFile('image')){
-            $file = $request -> image;
-            $newName = time() . $file->getClientOriginalName();
-            $file -> move('images/$newName');
-            $post->image = 'images/$newName';
-
+            $file = $request->image;
+            $newName = time() . $file-> getClientOriginalName();
+            $file->move('images',$newName);
+            $post -> image = "images/$newName";
         }
         $post -> save();
         return redirect('/post');
@@ -90,11 +89,10 @@ class PostController extends Controller
         $post -> description = $request -> description;
 
         if($request->hasFile('image')){
-            $file = $request -> image;
-            $newName = time() . $file->getClientOriginalName();
-            $file -> move('images/$newName');
-            $post->image = 'images/$newName';
-
+            $file = $request->image;
+            $newName = time() . $file-> getClientOriginalName();
+            $file->move('images',$newName);
+            $post -> image = "images/$newName";
         }
         $post -> update();
         return redirect('/post');

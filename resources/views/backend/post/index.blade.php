@@ -10,11 +10,24 @@
 
                 <a href="/post/create" class="float-right btn btn-success">Add Post</a>
 
-                    @foreach ($posts as $post)
-                        
-                    @endforeach
+
                 </div>
                 <div class="card-body">
+
+                    <div class="row">
+                        @foreach ($posts as $post)
+                        <div class="col-lg-3">
+                            <div class="card card-hover">
+                                <div class="card-body">
+                                    <img src="{{$post->image}}" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-footer">
+                                    <h4>{{$post->title}}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
 
                 </div>
             </div>
