@@ -7,8 +7,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <title>Asterisk Admin Dashboard</title>
+    <meta name="description" content="Asterisk High School">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
@@ -82,7 +82,7 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="/images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="./"><h2>Asterisk</h2></a>
                     <a class="navbar-brand hidden" href="./"><img src="/images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>

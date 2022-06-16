@@ -23,6 +23,15 @@
                                 </div>
                                 <div class="card-footer">
                                     <h4>{{$post->title}}</h4>
+
+                                        <form action="/post/{{$post->id}}" method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <a href="/post/{{$post->id}}/edit" class="btn btn-success">Edit</a>
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+
+
                                 </div>
                             </div>
                         </div>

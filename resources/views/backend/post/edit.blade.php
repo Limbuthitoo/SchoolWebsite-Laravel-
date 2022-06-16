@@ -20,7 +20,7 @@
 
                     <div class="form-group">
                         <label for="description">Description<span class="text-danger">*</span></label>
-                        <textarea id="description" class="form-control" name="" rows="3" value="{{$post->description}}"></textarea>
+                        <textarea id="description" class="form-control" name="description" rows="3" value={!! $post->description !!} ></textarea>
                     </div>
 
 <div>
