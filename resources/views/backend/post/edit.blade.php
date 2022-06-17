@@ -24,7 +24,7 @@
                     </div>
 
 <div>
-    <img src="{{asset($post->image)}}" alt="" width="250">
+    <img src="{{asset($post->image)}}" alt="" width="10 0">
 </div>
                     <div class="row">
                         <div class="col-md-6">

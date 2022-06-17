@@ -3,42 +3,50 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\School;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('frontend.pages.home');
+        $school = School::first();
+        return view('frontend.pages.home',compact("school"));
     }
 
     public function about()
     {
-        return view('frontend.pages.about');
+        $school = School::first();
+        return view('frontend.pages.about',compact("school"));
     }
 
     public function course()
     {
-        return view('frontend.pages.course');
+        $school = School::first();
+        return view('frontend.pages.course',compact("school"));
     }
 
     public function teacher()
     {
-        return view('frontend.pages.teacher');
+        $school = School::first();
+        return view('frontend.pages.teacher',compact("school"));
     }
 
     public function event()
     {
-        return view('frontend.pages.event');
+        $school = School::first();
+        return view('frontend.pages.event',compact("school"));
     }
 
     public function contact()
     {
-        return view('frontend.pages.contact');
+        $school = School::first();
+        return view('frontend.pages.contact',compact("school"));
     }
 
     public function coursedetail()
     {
-        return view('frontend.pages.coursedetail');
+        $school = School::first();
+        return view('frontend.pages.coursedetail',compact("school"));
     }
 }
